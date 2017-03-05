@@ -1,4 +1,4 @@
 # hello-world-python
-hello to everyone in the python universe
 
+Hello to everyone in the Python universe.
 Python scripts will be shown here.

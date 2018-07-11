@@ -8,8 +8,10 @@ This course will mention the following stuffs:
 
 ## Before we begin
 To save the time for Anaconda installation, I've done it already.  
-It simply run the script by: 
-`bash Anaconda3-5.2.0-Linux-x86_64.sh`
+It simply needs to run the script by: `bash Anaconda3-5.2.0-Linux-x86_64.sh`  
+During the installation, the path has been exported as the process we did for blast last time.  
+So now we can to test some basic commands to check if conda has been properly installed.  
+Try `conda info` and `conda list`.  
 
 ## Test a simple "Hello World" in Python
 Please login and go to your own folder.  
@@ -18,19 +20,21 @@ We execute the file by `python test.py`.
 You should see the line you expect to print.  
 
 ## Try it for Jupyter Notebook  
+Because there's no GUI support in the shell interface, if we call an editor remotely, it's unable to show. We need another way to open the editor in our own local machine.  
 * For mac:  
 `ssh -L 8000:localhost:8888 guest66@140.112.2.71`  
 * For windows:  
 In addition to ip and port setting in your Putty, find SSH tunnels setting such as:  
 ![SSH tunnel setting](tunnels.png)  
   
-As usual, enter your password to login. Go to your own folder and type:  
+As usual, enter your password to login.    
 `juptyer notebook --no-browser`  
 You'll see the response:  
 ![response for jupyter notebook command](tag.png) 
 Then go to your local machine browser and type:  
 `http://localhost:8000`  
 ![Before we enter the notebook](browser.png)
-Paste the highlight tag then we can see what's inside!
+Copy the highlighted token and paste to the required field then we can see what's inside!
 
-## 
+## Let's start today's lesson!
+Go to `python_workshop/day_2` and click `function_demo.ipynb`.

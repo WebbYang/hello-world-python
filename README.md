@@ -24,17 +24,21 @@ Because there's no GUI support in the shell interface, if we call an editor remo
 * For mac:  
 `ssh -L 8000:localhost:8888 guest66@140.112.2.71`  
 * For windows:  
-In addition to ip and port setting in your Putty, find SSH tunnels setting such as:  
+1. Set your Putty session to Connection type **SSH**, type the ip and port as usual.  
+![SSH ip setting](ip.png) 
+2. Find SSH tunnels setting such as:    
 ![SSH tunnel setting](tunnels.png)  
   
-As usual, enter your password to login.    
-`juptyer notebook --no-browser`  
-You'll see the response:  
-![response for jupyter notebook command](tag.png) 
+Enter your password to login.    
+You won't need to type `jupyter notebook --no-browser` because we already called.    
+Just for record. If you type the above command, you'll see the response like:  
+![response for jupyter notebook command](tag.png)  
+  
 Then go to your local machine browser and type:  
 `http://localhost:8000`  
 ![Before we enter the notebook](browser.png)
-Copy the highlighted token and paste to the required field then we can see what's inside!
+Copy the token: `db46b6cd426b4382a028f71ec9cbbe19ec0979f5148ce2f2`  
+Paste to the required field then we can see what's inside!
 
 ## Let's start today's lesson!
 Go to `python_workshop/day_2` and click `function_demo.ipynb`.

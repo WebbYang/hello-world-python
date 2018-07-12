@@ -24,10 +24,14 @@ Because there's no GUI support in the shell interface, if we call an editor remo
 * For mac:  
 `ssh -L 8000:localhost:8888 guest66@140.112.2.71`  
 * For windows:  
-1. Set your Putty session to Connection type **SSH**, type the ip and port as usual.  
+If you are using Putty:
+    1. Set your Putty session to Connection type **SSH**, type the ip and port as usual.  
 ![SSH ip setting](ip.png) 
-2. Find SSH tunnels setting such as:    
+    2. Find SSH tunnels setting such as:    
 ![SSH tunnel setting](tunnels.png)  
+  
+If you are using MobaXterm:  
+![SSH mobaXterm setting](mobaX.png)
   
 Enter your password to login.    
 You won't need to type `jupyter notebook --no-browser` because we already called.    
